@@ -202,6 +202,7 @@ jobs:
           CXX11: ${{ matrix.cxx11 }}
           GCC_VERSION: ${{ matrix.gcc_version }}
           TRAVIS_BRANCH: ${{ github.base_ref }}
+          TRAVIS_OS_NAME: "linux"
         run: |
           echo '==================================> SETUP'
           if [ -n "$GHA_CONTAINER" ]; then
@@ -409,6 +410,7 @@ jobs:
           CXX11: ${{ matrix.cxx11 }}
           GCC_VERSION: ${{ matrix.gcc_version }}
           TRAVIS_BRANCH: ${{ github.base_ref }}
+          TRAVIS_OS_NAME: "osx"
         run: |
           echo '==================================> SETUP'
           set -ex
