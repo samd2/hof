@@ -22,7 +22,8 @@ if [ "$DRONE_JOB_BUILDTYPE" == "boost" ]; then
 echo '==================================> INSTALL'
 
 
-export CC=$CXX
+#export CC=$CXX
+echo "hof without setting vars"
 
 export CHECKOUT_PATH=`pwd`;
 if [ -n "$GCC_VERSION" ]; then export CXX="g++-${GCC_VERSION}" CC="gcc-${GCC_VERSION}"; fi
