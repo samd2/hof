@@ -379,7 +379,7 @@ jobs:
             sources: ""
             llvm_os: ""
             llvm_ver: ""
-            xcode_version: "10.3"
+            xcode_version: 11.7
             cxxflags: "-DBOOST_HOF_HAS_VARIABLE_TEMPLATES=0"
             asan: "off"
             libcxx: "off"
